@@ -17,4 +17,15 @@
             }
         }
 ```
-
+### 120 [Triangle](Triangle.java)
+和矩阵的最小路径（64 [Minimum Path Sum](MinimumPathSum.java)）相同，用路径相加求最小值的方式
+```angular2html
+ int[] result = new int[triangle.size() + 1];
+        for (int i = triangle.size() - 1; i >= 0; i--) {
+            List<Integer> currRow = triangle.get(i);
+            for (int j = 0; j < currRow.size(); j++) {
+                result[j] = Math.min(result[j], result[j+1]) + currRow.get(j);
+            }
+        }
+        return result[0];
+```
