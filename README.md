@@ -29,3 +29,21 @@
         }
         return result[0];
 ```
+### 32 [Longest Valid Parenthese](LongestValidPatentheses.java)
+只能想到用栈，方法也没有答案中的好，dp就是首先找到规律，然后创建一个和要遍历的数据/矩阵相同大小的复制，然后
+在遍历的过程中记录下每一步的记录。
+```angularjs
+int maxans = 0;
+        int dp[] = new int[s.length()];
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) == ')') {
+                if (s.charAt(i - 1) == '(') {
+                    dp[i] = (i >= 2 ? dp[i - 2] : 0) + 2;
+                } else if (i - dp[i - 1] > 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
+                    dp[i] = dp[i - 1] + ((i - dp[i - 1]) >= 2 ? dp[i - dp[i - 1] - 2] : 0) + 2;
+                }
+                maxans = Math.max(maxans, dp[i]);
+            }
+        }
+        return maxans;
+```
