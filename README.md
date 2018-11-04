@@ -66,3 +66,32 @@ int maxans = 0;
         }
         return maxans;
 ```
+### 198 [House RObber](HouseRobber.java)
+讨论区分享的：DP的一些套路。
+1. recursive
+
+直接按照题意写出递推公式，对当前i，其和之前i-1,i-2的关系。
+2. recursive memo(up-down)
+
+从上到下，new一个数组放置从底层到当前i的结果，在遍历的时候就可以直接从数组中找，不用重复计算。
+
+3. iterative+memo(bottom-up)
+
+现在是从初始向后遍历
+
+4. iterative+2variables(bottom-up)
+
+数组在每个循环中只用到了两个数据（有的题目也可能是多个），因此改用双指针，节约空间，但是提交之后用时比第3个时间长
+```angularjs
+    public int rob(int[] nums) {
+        if (nums.length == 0) return 0;
+        int prev1 = 0;
+        int prev2 = 0;
+        for (int num : nums) {
+            int tmp = prev1;
+            prev1 = Math.max(prev2 + num, prev1);
+            prev2 = tmp;
+        }
+        return prev1;
+    }
+```
