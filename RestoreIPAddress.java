@@ -15,7 +15,7 @@ public class RestoreIPAddress {
         for(int i=0;i<4;i++){
 
             String s=ip.substring(inx,inx+i);
-            if((s.length()>1&&s.startsWith("0"))||(s.length()==3&&Integer.parseInt(s)>256))break;
+            if((s.length()>1&&s.startsWith("0"))||(s.length()==3&&Integer.parseInt(s)>255))break;
             search(ip,solution,cur+s+(count==3?"":"."),inx+i,count+1);
         }
 
