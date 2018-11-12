@@ -95,3 +95,22 @@ int maxans = 0;
         return prev1;
     }
 ```
+## backtracking
+就是穷举，但是用了递归，不满足判断条件的去掉，剪枝
+### 216 [Combination Sum III](CombinationSumIII)
+一个数组，将其中数字挨个添加到子列中，如果最后判断条件，如果满足，添加到结果中，不满足就去掉。注意这种List对象类要
+`List.add(new ArrayList<>(cur));`不谈添加的都是同一个对象，导致List中的每个元素都一样。
+```angularjs
+void backtracking(){
+    if(满足条件){
+        添加到结果中；
+        return;
+    }
+    for(每个需要考虑的元素i){
+        将i添加到curList中，
+        backtracking;进行判断
+        移除i,
+    }
+}
+
+```
