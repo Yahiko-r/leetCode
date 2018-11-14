@@ -1,6 +1,6 @@
 package leetCode;
 
-public class AddBinary {
+public class w	aAddBinary {
 	public String addBinary(String a, String b) {
 		if(a==null)return b;
 		if(b==null)return a;
