@@ -114,3 +114,5 @@ void backtracking(){
 }
 
 ```
+### 61 [RotateList](list/RotateRight)
+简单题，求出长度，k=k%length,尾部指向头部，返回新头部
