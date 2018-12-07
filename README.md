@@ -97,7 +97,7 @@ int maxans = 0;
 ```
 ## backtracking
 就是穷举，但是用了递归，不满足判断条件的去掉，剪枝
-### 216 [Combination Sum III](CombinationSumIII)
+### 216 [Combination Sum III](CombinationSumIII.java)
 一个数组，将其中数字挨个添加到子列中，如果最后判断条件，如果满足，添加到结果中，不满足就去掉。注意这种List对象类要
 `List.add(new ArrayList<>(cur));`不谈添加的都是同一个对象，导致List中的每个元素都一样。
 ```angularjs
@@ -114,5 +114,5 @@ void backtracking(){
 }
 
 ```
-### 61 [RotateList](list/RotateRight)
+### 61 [RotateList](list/RotateRight.java)
 简单题，求出长度，k=k%length,尾部指向头部，返回新头部
