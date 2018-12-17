@@ -118,3 +118,5 @@ void backtracking(){
 简单题，求出长度，k=k%length,尾部指向头部，返回新头部
 ### 80 [RemoveDuplicatesFrom SortedArray](array/RemoveDuplicates.java)
 用一个指针指向数组，如果num[i]>nums[i-2],就将nums[i]写入nums[j]，j是去掉多于两次重复值后数组的位置。
+### 79 [Word Search](backtracking/WordSearch.java)
+在检测到一个字符的时候，因为每个字符最多用一次，主要是用什么来给已经用过的字符做标记。
