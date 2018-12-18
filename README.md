@@ -120,3 +120,6 @@ void backtracking(){
 用一个指针指向数组，如果num[i]>nums[i-2],就将nums[i]写入nums[j]，j是去掉多于两次重复值后数组的位置。
 ### 79 [Word Search](backtracking/WordSearch.java)
 在检测到一个字符的时候，因为每个字符最多用一次，主要是用什么来给已经用过的字符做标记。
+### 89 [Gray Code](backtracking/GrayCode.java)
+如果知道具体的公式，可以立即求出。不知道公式，看了评论区才知道，可以用回溯的方法，不过在回溯的过程中，上一次回溯的过程是将上一阶倒序并，
+不然不能将顺序挨着。
