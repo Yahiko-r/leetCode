@@ -123,3 +123,6 @@ void backtracking(){
 ### 89 [Gray Code](backtracking/GrayCode.java)
 如果知道具体的公式，可以立即求出。不知道公式，看了评论区才知道，可以用回溯的方法，不过在回溯的过程中，上一次回溯的过程是将上一阶倒序并，
 不然不能将顺序挨着。
+### 102[Binary Tree Level Order Traversal](tree/BTLevelOrderTraversal.java)
+把树的每一层深度的值放到list中，遍历一下，如果把list的大小和深度进行比较，如果小于等于，说明是第一次遍历到，新建一个层list,加到结果中
+如果大于，说明之前已经走到过该层深度了，直接在list.get(deep).add(val)就行了。
