@@ -126,3 +126,5 @@ void backtracking(){
 ### 102[Binary Tree Level Order Traversal](tree/BTLevelOrderTraversal.java)
 把树的每一层深度的值放到list中，遍历一下，如果把list的大小和深度进行比较，如果小于等于，说明是第一次遍历到，新建一个层list,加到结果中
 如果大于，说明之前已经走到过该层深度了，直接在list.get(deep).add(val)就行了。
+### 103[Binary Tree Zigzag Level Order Traversal](tree/BTZigzagLevelOrderTraversal.java)
+和上一题一样，只不过，如果深度是奇数，再添加到list中时，从list的首位开始添加就行了。
