@@ -12,7 +12,7 @@ public class BTLevelOrderTraversal {
         add(rs,root,level);
         return rs;
     }
-    public void add(List<List<Integer>> rs,TreeNode root,int level){
+    private void add(List<List<Integer>> rs,TreeNode root,int level){
         if(root==null)return;
         if(rs.size()<=level){
             List<Integer> list=new ArrayList<>();
@@ -23,10 +23,5 @@ public class BTLevelOrderTraversal {
         }
         add(rs,root.left,level+1);
         add(rs,root.right,level+1);
-    }
-
-    public static void main(String[] args) {
-        BTLevelOrderTraversal b=new BTLevelOrderTraversal();
-
     }
 }
