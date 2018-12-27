@@ -128,3 +128,7 @@ void backtracking(){
 如果大于，说明之前已经走到过该层深度了，直接在list.get(deep).add(val)就行了。
 ### 103[Binary Tree Zigzag Level Order Traversal](tree/BTZigzagLevelOrderTraversal.java)
 和上一题一样，只不过，如果深度是奇数，再添加到list中时，从list的首位开始添加就行了。
+### 99[Recover Binary Search Tree](tree/RecoverBinarySearchTree.java)
+首先是树的遍历，前中后序的遍历的原理弄清除，主要是遍历的过程中变量的变化。
+### 98[ValidateBinarySearchTree](tree/ValidateBinarySearchTree.java)
+判断二叉查找树。
