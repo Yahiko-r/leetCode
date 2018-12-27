@@ -1,3 +1,5 @@
+import node.ListNode;
+
 public class RemoveDuplicatesFromList {
     public ListNode deleteDup(ListNode head){
 
