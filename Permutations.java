@@ -22,5 +22,6 @@ public class Permutations {
                 tempList.remove(tempList.size() - 1);
             }
         }
+
     }
 }
