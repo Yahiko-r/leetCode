@@ -123,12 +123,21 @@ void backtracking(){
 ### 89 [Gray Code](backtracking/GrayCode.java)
 如果知道具体的公式，可以立即求出。不知道公式，看了评论区才知道，可以用回溯的方法，不过在回溯的过程中，上一次回溯的过程是将上一阶倒序并，
 不然不能将顺序挨着。
-### 102[Binary Tree Level Order Traversal](tree/BTLevelOrderTraversal.java)
+### 102 [Binary Tree Level Order Traversal](tree/BTLevelOrderTraversal.java)
 把树的每一层深度的值放到list中，遍历一下，如果把list的大小和深度进行比较，如果小于等于，说明是第一次遍历到，新建一个层list,加到结果中
 如果大于，说明之前已经走到过该层深度了，直接在list.get(deep).add(val)就行了。
-### 103[Binary Tree Zigzag Level Order Traversal](tree/BTZigzagLevelOrderTraversal.java)
+### 103 [Binary Tree Zigzag Level Order Traversal](tree/BTZigzagLevelOrderTraversal.java)
 和上一题一样，只不过，如果深度是奇数，再添加到list中时，从list的首位开始添加就行了。
-### 99[Recover Binary Search Tree](tree/RecoverBinarySearchTree.java)
+### 99 [Recover Binary Search Tree](tree/RecoverBinarySearchTree.java)
 首先是树的遍历，前中后序的遍历的原理弄清除，主要是遍历的过程中变量的变化。
-### 98[ValidateBinarySearchTree](tree/ValidateBinarySearchTree.java)
+### 98 [ValidateBinarySearchTree](tree/ValidateBinarySearchTree.java)
 判断二叉查找树。
+### 970 [Powerful Integers](array/PowerfulIntegers.java)
+找出所有的就行了，不过要注意特例1
+### 969 [Pancake Sorting](array/PancakeSorting.java)
+不求最快的翻转方式，从最大的慢慢向前反转，找到最大的，换到第一个数字的位置上，在换到最后面，
+### 971 [Flip Binary Tree To Match Preorder Traversal](tree/FlipBTMatchPreorderTraversal.java)
+前序遍历和给的序列想比较，如果不能就不能，如果能和右子树交换的就换，不能交换就返回false.
+### 60 [Permutation Sequence](PermutationSequence.java)
+字典序，n个数字，求第k个，第一个数字是(k-1)/(n-1)!,k-1是为了在分清临界出，1，2，3/3  应该都是一样的，然后在数字序列中去掉第一个，
+第二个数字，是前一个的余数/(n-2)!，然后在剩余的序列中找出这个数字。
