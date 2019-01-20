@@ -141,3 +141,5 @@ void backtracking(){
 ### 60 [Permutation Sequence](PermutationSequence.java)
 字典序，n个数字，求第k个，第一个数字是(k-1)/(n-1)!,k-1是为了在分清临界出，1，2，3/3  应该都是一样的，然后在数字序列中去掉第一个，
 第二个数字，是前一个的余数/(n-2)!，然后在剩余的序列中找出这个数字，数字序列可以用list，也可以用一个数组来表示数字有没有被用到。
+### 978 [Longest Turbulent Subarry](array/LongestTurbulentSubarray.java)
+动态规划，安装顺序遍历一遍就行了。
