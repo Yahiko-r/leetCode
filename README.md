@@ -100,7 +100,7 @@ int maxans = 0;
 ### 216 [Combination Sum III](CombinationSumIII.java)
 一个数组，将其中数字挨个添加到子列中，如果最后判断条件，如果满足，添加到结果中，不满足就去掉。注意这种List对象类要
 `List.add(new ArrayList<>(cur));`不谈添加的都是同一个对象，导致List中的每个元素都一样。
-```angularjs
+```java
 void backtracking(){
     if(满足条件){
         添加到结果中；
@@ -143,3 +143,6 @@ void backtracking(){
 第二个数字，是前一个的余数/(n-2)!，然后在剩余的序列中找出这个数字，数字序列可以用list，也可以用一个数组来表示数字有没有被用到。
 ### 978 [Longest Turbulent Subarry](array/LongestTurbulentSubarray.java)
 动态规划，安装顺序遍历一遍就行了。
+### 979 [Distribute Coins in Binary Tree](tree/DistributeConsInBT.java)
+左子树需要多少步，右子树需要多少步，然后和节点的值相比较，是改节点需要多少个coin，正表示向外传递，负表示向内传递。
+需要注意的是关于树的题目基本上都是那三个遍历方式，此外加上，深度、广度优先。
