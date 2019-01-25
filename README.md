@@ -148,3 +148,5 @@ void backtracking(){
 需要注意的是关于树的题目基本上都是那三个遍历方式，此外加上，深度、广度优先。
 ### 150 [Evaluate Reverse Polish Notation](other/EvaluateReversePolishNotation.java)
 用栈实现就行了，注意出栈操作数得顺序和'-'， '*' 的顺序别弄反了，其余注意细节。
+### 104 [Maximum Depth of Binary Tree](tree/MaximumDepthOfBinaryTree.java)
+对树进行遍历即可。
