@@ -150,3 +150,5 @@ void backtracking(){
 用栈实现就行了，注意出栈操作数得顺序和'-'， '*' 的顺序别弄反了，其余注意细节。
 ### 104 [Maximum Depth of Binary Tree](tree/MaximumDepthOfBinaryTree.java)
 对树进行遍历即可。
+### 105 [Construct BT From PreOrder And Inorder](tree/ConstructBTFromPreOrderAndInorder.java)
+在前序中是父结点，在中序中找到对应的节点，左边的就是左子树，右边的就是右子树
