@@ -152,3 +152,9 @@ void backtracking(){
 对树进行遍历即可。
 ### 105 [Construct BT From PreOrder And Inorder](tree/ConstructBTFromPreOrderAndInorder.java)
 在前序中是父结点，在中序中找到对应的节点，左边的就是左子树，右边的就是右子树
+### 108 [Convert Sorted Array to Binary Search Tree](tree/ConvertSortedArrayToBinarySearchTree.java)
+把中点当成根，然后左右继续安装这种方法即可。
+### 113 [Path Sum II](tree/PathSumII.java)
+遍历一下，找一下就行了
+### 119 [Pascal's Triangle II](other/PascalTriangle.java)
+看讨论区的答案，用一个list就行了，每增加一行就在list上增加一个1，同时把中间的几个数字更新。
