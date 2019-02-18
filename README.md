@@ -158,3 +158,5 @@ void backtracking(){
 遍历一下，找一下就行了
 ### 119 [Pascal's Triangle II](other/PascalTriangle.java)
 看讨论区的答案，用一个list就行了，每增加一行就在list上增加一个1，同时把中间的几个数字更新。
+### 50 [Pow(x,n)](other/PowXY.java)
+容易想到将幂换成多个2的倍数的和的形式，然后采用位运算，唯一需要注意的是INT_MIN=-INT_MIN;
