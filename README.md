@@ -162,3 +162,6 @@ void backtracking(){
 容易想到将幂换成多个2的倍数的和的形式，然后采用位运算，唯一需要注意的是INT_MIN=-INT_MIN;
 ### 41 [FirstMissingPositive](array/FirstMissingPositive.java)
 大佬的提示：数组本身就可以做标记，然后就是不用管错误的数字放在什么位置，只要正确的数字能够放到位置上就行了。
+### 37 [Sudoku Solver](backtracking/SudokuSolver.java)
+回溯，怎么把每一行缺失的数字找出来才能不用每次都从0来一遍？讨论区也都是从0检测一遍，还有就是for(char c;xx;xx),在for
+循环中，也可以用char
