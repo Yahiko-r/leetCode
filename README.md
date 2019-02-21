@@ -2,7 +2,8 @@
 ## 递归
 ***
 ### 95 [Unique Binary Search Trees II](UniquePathsII.java)
-能够想到用递归左右产生子树的方法，但是程序就是写不出来，主要在于对于一个root i, 要实现左右子树的所有情况，左右子树是独立的，添加两层循环，把左右子树的各种情况放到list中，之后与root相连，另外程序没有通过，结果中[[]]和[]有什么区别吗
+能够想到用递归左右产生子树的方法，但是程序就是写不出来，主要在于对于一个root i, 要实现左右子树的所有情况，左右子树是独立的，
+添加两层循环，把左右子树的各种情况放到list中，之后与root相连，
 ```
         for(int i=s;i<=n;i++){
             List<TreeNode> leftTree=genTree(s,i-1);
@@ -165,3 +166,6 @@ void backtracking(){
 ### 37 [Sudoku Solver](backtracking/SudokuSolver.java)
 回溯，怎么把每一行缺失的数字找出来才能不用每次都从0来一遍？讨论区也都是从0检测一遍，还有就是for(char c;xx;xx),在for
 循环中，也可以用char
+### 91 [Decode Ways](dp/DecodeWays.java)
+dp问题，斐波那契数列，但是要考虑中间有0的情况，然后判断两个相邻的数是否大于26，讨论区用的是
+Integer.parseInt(s.substring(i,i+2))<=26，每次做题我都想不出用Integer里的函数，了解的还不够多。
