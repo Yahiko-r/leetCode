@@ -19,10 +19,4 @@ public class GrayCode {
         }
         return rs;
     }
-
-    public static void main(String[] args) {
-        GrayCode g = new GrayCode();
-        g.grayCode(3);
-        System.out.println("over");
-    }
 }
