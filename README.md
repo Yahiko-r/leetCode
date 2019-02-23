@@ -169,3 +169,6 @@ void backtracking(){
 ### 91 [Decode Ways](dp/DecodeWays.java)
 dp问题，斐波那契数列，但是要考虑中间有0的情况，然后判断两个相邻的数是否大于26，讨论区用的是
 Integer.parseInt(s.substring(i,i+2))<=26，每次做题我都想不出用Integer里的函数，了解的还不够多。
+### 116 [Populating Next Right Pointers in Each Node](tree/PopulatingNextRightPointer.java)
+树的层序遍历，需要知道每一层的编号。评论区更好的方法，直接按照左子树来向下遍历，对于每一层，使用next节点向右边遍历
+类似与一个链表，每个链表的节点又是一个链表。
