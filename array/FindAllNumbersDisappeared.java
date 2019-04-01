@@ -3,6 +3,9 @@ package array;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 利用数组下标，将重复的值变成0，最后再遍历一遍
+ */
 public class FindAllNumbersDisappeared {
     public List<Integer> findDisappearedNumbers(int[] nums){
         List<Integer> rs=new ArrayList<>();
@@ -30,12 +33,5 @@ public class FindAllNumbersDisappeared {
         nums[j]=temp;
     }
 
-    public static void main(String[] args) {
-        int[] a={4,3,2,7,8,2,3,1};
-        FindAllNumbersDisappeared f=new FindAllNumbersDisappeared();
-        List<Integer> disappearedNumbers = f.findDisappearedNumbers(a);
-        System.out.println("oooo");
-
-    }
 
 }
