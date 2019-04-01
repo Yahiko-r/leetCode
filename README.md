@@ -174,3 +174,11 @@ Integer.parseInt(s.substring(i,i+2))<=26，每次做题我都想不出用Integer
 类似与一个链表，每个链表的节点又是一个链表。当前行处理的是下一层的next指向。
 ### 117 [Populating Next Right Pointers in Each Node ](tree/PopulatingNextRightPointerII.java)
 与上一题答题想法类似，自己的写法每次都没有评论区简洁。每次要构思好思路再开始写。
+### 155 [Min Stack](other/MinStack.java)
+怎么让最小值随着pop()动态变化，维护一个数组的话，不能动态增加或者减少。解答区用的是将值压入栈中。
+### 151 [Reverse Words in a String](string/ReverseWordsInaString.java)
+注意String 中null和""的区别
+### 148[Sort List](list/SortList.java)
+归并。
+### 287[Find the Duplicate Number](array/FindDuplicateNumber.java)
+满足题意的数组可以当成链表来看待。
