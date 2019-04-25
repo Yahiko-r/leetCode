@@ -182,3 +182,8 @@ Integer.parseInt(s.substring(i,i+2))<=26，每次做题我都想不出用Integer
 归并。
 ### 287[Find the Duplicate Number](array/FindDuplicateNumber.java)
 满足题意的数组可以当成链表来看待。
+### 494 [Target Sum](array/FindTargetSumWays.java)
+从数组中通过+或者-来使结果等于target。
+第一思路：暴力求解，通过递归把所有的可能都找出来，结果和target相比较就行了。
+DP方法：递归遍历的时候，指数个结果，在某层i上，可能会有多个值都相等。因此，通过数组记录下所有可能的结果值，如果有多个值
+只需要在dp数组中次数相加就行了，在往下遍历的时候，就会只计算一次。
