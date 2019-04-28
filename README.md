@@ -189,3 +189,8 @@ DP方法：递归遍历的时候，指数个结果，在某层i上，可能会�
 只需要在dp数组中次数相加就行了，在往下遍历的时候，就会只计算一次。
 ### 73 [Set Matrix Zeroes](matrix/SetMatrixZeros.java)
 用第一行来存储为0的列，第一列来存储为0的行，只不过第一列和第一行是否为0 要新建变量来存储。
+### 406 [Queue Reconstruction by Height](other/QueueReconstruction.java)
+从大到小排序，然后按照顺序进行一个个按照k，放到合适的位置上。
+### 279 [Perfect Squares](dp/PerfectSquares.java)
+dp，把从1到n的所有值都算出来。
+dp[i]=min{dp[i-j*j]}  j*j<=i,
