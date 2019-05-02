@@ -96,6 +96,13 @@ int maxans = 0;
         return prev1;
     }
 ```
+### 337 [House Robber III](dp/HouseRobberIII.java)
+数组的偷是用dp的思想。
+对于树来说，是按层来分配，1.偷了当前层，下一层不能偷。2.不偷当前层，递归算下一层（左右两个子树）。
+
+数组是用两个变量pre1,pre2来记录前两个状态。这里是用一个数组（容量为2）,记录1.偷当前层，2.不偷当前层
+  讨论区赞数最高的评论很好。第三种方法是对第二种方法的空间优化，因为只需要记录两个结果即可，而
+  第二种方法记录了每个节点的结果
 ## backtracking
 就是穷举，但是用了递归，不满足判断条件的去掉，剪枝
 ### 216 [Combination Sum III](CombinationSumIII.java)
