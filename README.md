@@ -194,3 +194,9 @@ DP方法：递归遍历的时候，指数个结果，在某层i上，可能会�
 ### 279 [Perfect Squares](dp/PerfectSquares.java)
 dp，把从1到n的所有值都算出来。
 dp[i]=min{dp[i-j*j]}  j*j<=i,
+### 347 [Top K Frequent Elements](array/TopKFrequentElements.java)
+先统计每个数的频率放到hashmap中，O(n);之后求频率的top k问题，堆排序。
+> hashmap： map.getOrDefault(n,1)
+> 优先队列，每次poll,add都会排序一次，别忘记加循环。
+### 322 [Coin Change](dp/CoinChange.java)
+标准动态规划问题，`dp[i]=min{i-coins[j]}  j<coins.length;`
