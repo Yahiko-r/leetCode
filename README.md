@@ -96,7 +96,7 @@ int maxans = 0;
         return prev1;
     }
 ```
-### 337 [House Robber III](dp/HouseRobberIII.java)
+### 337 [House Robber III](tree/HouseRobberIII.java)
 数组的偷是用dp的思想。
 对于树来说，是按层来分配，1.偷了当前层，下一层不能偷。2.不偷当前层，递归算下一层（左右两个子树）。
 
