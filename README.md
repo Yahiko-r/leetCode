@@ -214,3 +214,6 @@ dp[i]=min{dp[i-j*j]}  j*j<=i,
 在第i天总共有两种状态，手里有股票，没股票。buy[i]表示有，sell[i]表示没有。
 cooldown只是在状态方程中变了一下。
 不会做就记住这种类型：dp中的两个状态。
+### 238 [Product of Array Except Self](array/ProductAttayExceptSelf.java)
+用两个数组分别记录i左边和右边的乘积。最后遍历I,左右相乘，简化空间：其中一个数组用一个变量来代替即可，在最后遍历的过程中
+一直乘nums[i]
