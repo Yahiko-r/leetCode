@@ -207,3 +207,10 @@ dp[i]=min{dp[i-j*j]}  j*j<=i,
 > 优先队列，每次poll,add都会排序一次，别忘记加循环。
 ### 322 [Coin Change](dp/CoinChange.java)
 标准动态规划问题，`dp[i]=min{i-coins[j]}  j<coins.length;`
+### 394 [Decode String](string/DecodeString.java)
+用一个栈存储[]中的数据，另一个栈存储[]前面的数字，遇到']'就构造字符串加到前面的字符串上。
+### 309 [Best Time Buy Sell Stock CoolDown](array/BestBuySellStockCooldown.java)
+
+在第i天总共有两种状态，手里有股票，没股票。buy[i]表示有，sell[i]表示没有。
+cooldown只是在状态方程中变了一下。
+不会做就记住这种类型：dp中的两个状态。
