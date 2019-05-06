@@ -217,3 +217,5 @@ cooldown只是在状态方程中变了一下。
 ### 238 [Product of Array Except Self](array/ProductAttayExceptSelf.java)
 用两个数组分别记录i左边和右边的乘积。最后遍历I,左右相乘，简化空间：其中一个数组用一个变量来代替即可，在最后遍历的过程中
 一直乘nums[i]
+### 72 [edit Distance](string/MinDistance.java)
+两个字符串进行比较，或者匹配。记住这种类型，很多都能够直接用DP来做。
