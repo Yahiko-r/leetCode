@@ -221,3 +221,5 @@ cooldown只是在状态方程中变了一下。
 两个字符串进行比较，或者匹配。记住这种类型，很多都能够直接用DP来做。
 ### 128 [Longest Consecutive Sequence](array/LongestConsecutiveSequence.java)
 对每个数字，连续的话可以上，可以下。只取一个方向，例如取上。如果该数字在数组中有-1的值，跳过去。
+### 171 [Excel Sheet Column Number](other/ExcelSheetColumuNumber.java)
+从左到右遍历
