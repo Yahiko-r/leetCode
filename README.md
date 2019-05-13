@@ -223,3 +223,6 @@ cooldown只是在状态方程中变了一下。
 对每个数字，连续的话可以上，可以下。只取一个方向，例如取上。如果该数字在数组中有-1的值，跳过去。
 ### 171 [Excel Sheet Column Number](other/ExcelSheetColumuNumber.java)
 从左到右遍历
+### 162 [Find Peak Element](array/FindPeakElement.java)
+从头找找到nums[i]>nums[i+1]的i,O(n),
+用二分法找，O(lg(n))
