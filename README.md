@@ -226,3 +226,5 @@ cooldown只是在状态方程中变了一下。
 ### 162 [Find Peak Element](array/FindPeakElement.java)
 从头找找到nums[i]>nums[i+1]的i,O(n),
 用二分法找，O(lg(n))
+### 190 [Reverse Bits](bit/ReverseBits.java)
+注意在最后一位，结果不要在向左移位
