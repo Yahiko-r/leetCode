@@ -228,3 +228,6 @@ cooldown只是在状态方程中变了一下。
 用二分法找，O(lg(n))
 ### 190 [Reverse Bits](bit/ReverseBits.java)
 注意在最后一位，结果不要在向左移位
+### 173 [Binary Search Tree Iterator](tree/BSTIterator.java)
+空间复杂读是O(n),不是O(h),如果是O(h)的话，需要把中序遍历二叉树拆分，每次只遍历一个节点的最左节点。
+//todo :写一下
