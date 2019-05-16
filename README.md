@@ -231,3 +231,5 @@ cooldown只是在状态方程中变了一下。
 ### 173 [Binary Search Tree Iterator](tree/BSTIterator.java)
 空间复杂读是O(n),不是O(h),如果是O(h)的话，需要把中序遍历二叉树拆分，每次只遍历一个节点的最左节点。
 //todo :写一下
+### 172 [Factorial Trailing Zeroes](other/FactorialTrailingZeroes.java)
+找乘数中5的个数
