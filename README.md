@@ -233,3 +233,5 @@ cooldown只是在状态方程中变了一下。
 //todo :写一下
 ### 172 [Factorial Trailing Zeroes](other/FactorialTrailingZeroes.java)
 找乘数中5的个数
+### 143 [Reorder List](list/ReorderList.java)
+找到中点之后，别忘记前一段的tail.next=下一段的头节点，设置为null
