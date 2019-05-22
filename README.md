@@ -235,3 +235,6 @@ cooldown只是在状态方程中变了一下。
 找乘数中5的个数
 ### 143 [Reorder List](list/ReorderList.java)
 找到中点之后，别忘记前一段的tail.next=下一段的头节点，设置为null
+### 199 [Binary Tree Right Side View](tree/BTRightSideView.java)
+按照中右左的顺序遍历，将遍历到的第一个深度放到Map<depth,value>中，遍历其他分支的时候，map中没有该深入，就Put.
+否则，继续遍历.
