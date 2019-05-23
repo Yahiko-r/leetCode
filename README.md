@@ -241,3 +241,5 @@ cooldown只是在状态方程中变了一下。
 ### 202[Happy Number](other/HappyNumber.java)
 用set记录已经出现过的数字。
 讨论区中：类似循环链表的快慢指针，来找出circle
+### 203 [Remove Linked List Element](list/RemoveLinkedListElements.java)
+注意头节点。
