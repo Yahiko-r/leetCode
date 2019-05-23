@@ -247,3 +247,6 @@ cooldown只是在状态方程中变了一下。
 注意时间复杂度的计算 O(n log log n).
 怎么算的？
 > http://www.wikiwand.com/en/Sieve_of_Eratosthenes#/Algorithm_complexity
+### 205 [Isomorphic Strings](string/IsomorphicStrings.java)
+就是找对应的映射，不过两个不同字符不能映射同一个。就是一一对应，讨论区直接用两个数组c[256]，比较c1，和c2是否相等来比较是否
+已经有映射，
