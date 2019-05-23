@@ -243,3 +243,7 @@ cooldown只是在状态方程中变了一下。
 讨论区中：类似循环链表的快慢指针，来找出circle
 ### 203 [Remove Linked List Element](list/RemoveLinkedListElements.java)
 注意头节点。
+### 204 [Count Primes](other/CountPrimes.java)
+注意时间复杂度的计算 O(n log log n).
+怎么算的？
+> http://www.wikiwand.com/en/Sieve_of_Eratosthenes#/Algorithm_complexity
