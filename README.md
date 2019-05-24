@@ -249,4 +249,6 @@ cooldown只是在状态方程中变了一下。
 > http://www.wikiwand.com/en/Sieve_of_Eratosthenes#/Algorithm_complexity
 ### 205 [Isomorphic Strings](string/IsomorphicStrings.java)
 就是找对应的映射，不过两个不同字符不能映射同一个。就是一一对应，讨论区直接用两个数组c[256]，比较c1，和c2是否相等来比较是否
-已经有映射，
+已经有映射
+### 201 [Bitwise And of Number Range](bit/BitwiseAndOfNumbersRange.java)
+**不会做**  找出数字相同的高位
