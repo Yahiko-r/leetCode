@@ -252,3 +252,5 @@ cooldown只是在状态方程中变了一下。
 已经有映射
 ### 201 [Bitwise And of Number Range](bit/BitwiseAndOfNumbersRange.java)
 **不会做**  找出数字相同的高位
+### 209 [Minimum Size Subarray Sum](array/MinimumSizeSubarraySum.java)
+**典型题** 双指针
