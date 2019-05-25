@@ -254,3 +254,5 @@ cooldown只是在状态方程中变了一下。
 **不会做**  找出数字相同的高位
 ### 209 [Minimum Size Subarray Sum](array/MinimumSizeSubarraySum.java)
 **典型题** 双指针
+### 217 [Contains Duplicate](array/ContainsDuplicate.java)
+1.排序 2.哈希
