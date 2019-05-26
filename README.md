@@ -261,7 +261,7 @@ cooldown只是在状态方程中变了一下。
 dfs找有向图的环，不过题目给的图用一个个pairs来表示，想找节点i相连的节点，每次都要遍历所有的来找（是不是要先
 构造一下图）。
 
-讨论区：把pairs重新构造成邻接矩阵。
+讨论区：把pairs重新构造成邻接矩阵，用BFS的方法，找出所有的入口，如果有环的话，计数会比所有的课程少。
 ### 1051[Height Checker](array/HeightChecker.java)
 排序，之后比较
 ### 1053[Previous Permutation With One Swap](array/PreviousPerMutationOneSwap.java)
